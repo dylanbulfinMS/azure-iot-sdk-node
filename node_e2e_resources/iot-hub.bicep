@@ -23,6 +23,7 @@ resource iotHub 'Microsoft.Devices/IotHubs@2021-07-01' = {
         containerName: 'aziotbld'
       }
     }
+    features: 'GWV2'
   }
 }
 
