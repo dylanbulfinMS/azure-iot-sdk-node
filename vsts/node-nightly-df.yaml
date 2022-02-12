@@ -6,7 +6,7 @@ resources:
 jobs:
 - job: Phase_2
   variables:
-  - group: $(node-linux-variables)
+  - group: $(nodelinuxvariables)
   displayName: Ubuntu 20.04 - Node 12.x
   condition: succeededOrFailed()
   pool:
@@ -61,7 +61,7 @@ jobs:
 
 - job: Phase_1
   variables:
-  - group: $(node-windows-variables)
+  - group: $(nodewindowsvariables)
   displayName: 'Windows Node 12.x'
   condition: succeededOrFailed()
   pool:
